@@ -3,11 +3,10 @@ function displyavalue(num){
     inputbox.value+=num
 }
 //displyvalue=(num)=>rslt.value+=num
-function evaluateExpresion(){
+function evaluateExpression(){
     let cur_value=rslt.value;
     let result=eval(cur_value)
     rslt.value=result;
-
 }
 
 //evaluateExpression()=>reslt.value=eval(rslt.value)
