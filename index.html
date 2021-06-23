@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,70 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="./style.css">
-   <script src="./script.js"></script>
 </head>
 <body>
-    <div class="col"></div>
-    <div class="col">
-        <h2 style="text-align: center;margin-top: 70px;">CALCULATOR</h2>
-    </div>
-    <div class="col"></div>
-    <div class="first" style="align-self: start;">
+
     
-    <input  type="text" name="result" class="text" id=rslt>
-    <input id="first" type="button" name="clear" value="C" onclick="clearBox()">
+    
+    <div  class="container">
+    <h1 style="text-align: center;">CALCULATOR</h1>
+
+    
+    <input id="t1" type="text" name="enter" class="text1">
+    <input  id="first" type="button" name="clear" value="C" onclick="clearBox('c')">
     <br>
-    <input class="class1" type="button" name="one"  value="1" onclick="displyavalue('1')">
-    <input type="button" name="two" value="2" onclick="displyavalue('2')">
-    <input type="button" name="three" value="3" onclick="displyavalue('3')">
-    <input type="button" name="add" value="+" onclick="displyavalue('+')">
-    </br>
-    <input class="class1" type="button" name="four" value="4" onclick="displyavalue('4')">
-    <input type="button" name="five" value="5" onclick="displyavalue('5')">
-    <input type="button" name="six" value="6" onclick="displyavalue('6')">
-    <input type="button" name="sub" value="-" onclick="displyavalue('-')">
-    <input class="class1" type="button" name="seven" value="7" onclick="displyavalue('7')">
-    <input type="button" name="eight" value="8" onclick="displyavalue('8')">
-    <input type="button" name="nine" value="9" onclick="displyavalue('9')">
-    <input type="button" name="mul" value="*" onclick="displyavalue('*')">
-    <input class="class1" type="button" name="div" value="/" onclick="displyavalue('/')">
-    <input type="button" name="zero" value="0" onclick="displyavalue('0')">
-    <input type="button" name="point" value=">" >
-    <input type="button" name="equal" value="=" onclick="evaluateExpression()">
-
-
-
+    
+    <input class="class1"type="button" name="one" value="1" onclick="displayValue('1')">
+    <input type="button" name="two" value="2" onclick="displayValue('2')">
+    <input type="button" name="three" value="3" onclick="displayValue('3')">
+    <input type="button" name="add" value="+" onclick="displayValue('+')"><br>
+    
+    
+    <input class="class1" type="button" name="four" value="4" onclick="displayValue('4')">
+    <input type="button" name="five" value="5" onclick="displayValue('5')">
+    <input type="button" name="six" value="6" onclick="displayValue('6')">
+    <input type="button" name="sub" value="-" onclick="displayValue('-')"><br>
     
     
     
-    </div>
-
-
-
+    <input class="class1" type="button" name="seven" value="7" onclick="displayValue('7')">
+    <input type="button" name="eight" value="8" onclick="displayValue('8')">
+    <input type="button" name="nine" value="9" onclick="displayValue('9')">
+    <input type="button" name="mul" value="x" onclick="displayValue('*')">
+    <br>
+    
+    
+    <input class="class1" type="button" name="div" value="/" onclick="displayValue('/')">
+    <input type="button" name="zero" value="0" onclick="displayValue('0')">
+    <input type="button" name="dot" value="." onclick="displayValue('.')">
+    <input type="button" name="equal" value="=" onclick="evaluateExpression('=')">
+    <input id="rem" type="button" name="remove" value="<" onclick="removeElement('<')">
+</div>
 </body>
 </html>
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  

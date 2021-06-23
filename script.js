@@ -1,23 +1,18 @@
-function displyavalue(num){
-    let inputbox=document.getElementById("rslt")
-    inputbox.value+=num
-}
-//displyvalue=(num)=>rslt.value+=num
-function evaluateExpression(){
-    let cur_value=rslt.value;
-    let result=eval(cur_value)
-    rslt.value=result;
+function displayValue(num){
+    let inputbox=document.getElementById("t1");
+    inputbox.value+=num;
 }
 
-//evaluateExpression()=>reslt.value=eval(rslt.value)
+function evaluateExpression(){
+    let cur_value=t1.value;
+    let res=eval(cur_value);
+    t1.value=res;
+}
 
 function clearBox(){
-    rslt.value="";
+    t1.value="";
+
 }
-
-//clearBox()=>rslt.value;
-
-//function removeElement(){
-//    rslt.value=rslt.slice(0,-1)
-//}
-// >
+function removeElement(){
+    t1.value=t1.value.slice(0,-1);
+}
